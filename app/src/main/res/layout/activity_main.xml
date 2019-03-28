@@ -5,29 +5,127 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:text="SENSOR MONITOR"
+            android:textAlignment="center" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <!--<TextView-->
+        <!--android:id="@+id/sensor_list"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Dayummm :3"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:background="@drawable/kotbox"
+            >
 
             <TextView
-                android:id="@+id/sensor_list"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dayummm :3"/>
-            <TextView
-                android:layout_marginTop="20dp"
                 android:id="@+id/sensor_proximity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Panpakapannn :3"/>
+                android:layout_marginTop="20dp"
+                android:text="Panpakapannn :3" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/sensor_accelerometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="230dp"
+                android:text="Dessuuu :3" />
 
-    </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:background="@drawable/kotbox">
+
+            <TextView
+                android:id="@+id/sensor_gravity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Woundeedee :3" />
+
+            <TextView
+                android:id="@+id/sensor_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="230dp"
+                android:text="Ollaholla :3" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="20dp"
+             android:layout_weight="1"
+             android:background="@drawable/kotbox"
+             >
+
+             <TextView
+                 android:id="@+id/sensor_gyroscope"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:text="Gyahahhuu :3" />
+
+             <TextView
+                 android:id="@+id/sensor_magnetic"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="230dp"
+                 android:text="Muahahahaa :3" />
+
+         </RelativeLayout>
+
+     </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
 </LinearLayout>
